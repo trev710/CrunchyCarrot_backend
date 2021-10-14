@@ -18,15 +18,15 @@ puts "Destroying all instances"
 puts "Seeding data" 
 
 User.create(
-    username: "MonkeyJones",
+    username: "Monke",
     password: "123",
     avatar: "https://visionviral.com/wp-content/uploads/2020/06/Return-to-Monke-Know-Your-Meme.jpg"
 )
 
 base_image_url = 'https://image.tmdb.org/t/p/w500'
 
-Movie.create(title: "Fight Club", runtime: base_image_url + 139, image: base_image_url + "/8kNruSfhk5IoE4eZOc4UpvDn6tq.jpg", genre: "Drama", tagline: "Mischief. Mayhem. Soap.", release_year: 1999, overview: "A ticking-time-bomb insomniac and a slippery soap salesman channel primal male aggression into a shocking new form of therapy.", rating: 8.4)
-Movie.create(title: "Titanic", runtime: base_image_url + 194, image: base_image_url + "/9xjZS2rlVxm8SFx8kPC3aIGCOYQ.jpg", genre: "Drama", tagline: "Nothing on Earth could come between them.", release_year: 1997, overview: "101-year-old Rose DeWitt Bukater tells the story of her life aboard the Titanic, 84 years later.", rating: 7.9)
+Movie.create(title: "Fight Club", runtime: 139, image: base_image_url + "/8kNruSfhk5IoE4eZOc4UpvDn6tq.jpg", genre: "Drama", tagline: "Mischief. Mayhem. Soap.", release_year: 1999, overview: "A ticking-time-bomb insomniac and a slippery soap salesman channel primal male aggression into a shocking new form of therapy. Their concept catches on, with underground fight clubs forming in every town, until an eccentric gets in the way and ignites an out-of-control spiral toward oblivion.", rating: 8.4)
+Movie.create(title: "Titanic", runtime: 194, image: base_image_url + "/9xjZS2rlVxm8SFx8kPC3aIGCOYQ.jpg", genre: "Drama", tagline: "Nothing on Earth could come between them.", release_year: 1997, overview: "101-year-old Rose DeWitt Bukater tells the story of her life aboard the Titanic, 84 years later. A young Rose boards the ship with her mother and fiancé. Meanwhile, Jack Dawson and Fabrizio De Rossi win third-class tickets aboard the ship. Rose tells the whole story from Titanic's departure through to its death—on its first and last voyage—on April 15, 1912.", rating: 7.9)
 Movie.create(title: "Avengers: Endgame", runtime: 181, image: base_image_url + "/bvjltR2nDuhf1NlnwCrgNwvHuIh.jpg", genre: "Action", tagline: "Part of the journey is the end.", release_year: 2019, overview: "After the devastating events of Avengers: Infinity War, the universe is in ruins due to the efforts of the Mad Titan, Thanos.", rating: 8.3)
 Movie.create(title: "Bonnie and Clyde", runtime: 110, image: base_image_url + "/sE0B42SAVLga4Qwzt4IgqwEsEUQ.jpg", genre: "Crime", tagline: "They’re young… they’re in love… and they kill people.", release_year: 1967, overview: "In the 1930s, bored waitress Bonnie Parker falls in love with an ex-con named Clyde Barrow and together they start a violent crime spree through the country", rating: 7.5)
 Movie.create(title: "Madea's Family Reunion", runtime: 110, image: base_image_url + "/bO9NvwpSElW8lp33fGyy8VaS5s9.jpg", genre: "Comedy", tagline: "She's back", release_year: 2006, overview: "Based upon Tyler Perry's acclaimed stage production", rating: 6.2)

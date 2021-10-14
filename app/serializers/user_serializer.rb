@@ -1,5 +1,6 @@
-attributes :id, :username, :avatar
-
-has_many :reviews
-# has_many :movies
-end
+class UserSerializer < ActiveModel::Serializer
+    attributes :id, :username, :avatar, :following_users
+  
+    has_many :reviews
+  
+  end
