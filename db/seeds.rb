@@ -21,7 +21,12 @@ User.create(
     username: "Monke",
     password: "123",
     avatar: "https://visionviral.com/wp-content/uploads/2020/06/Return-to-Monke-Know-Your-Meme.jpg"
+
 )
+
+20.times do 
+    User.create(username: Faker::Twitter.screen_name, password: "123", avatar: Faker::LoremFlickr.image)
+end
 
 base_image_url = 'https://image.tmdb.org/t/p/w500'
 
