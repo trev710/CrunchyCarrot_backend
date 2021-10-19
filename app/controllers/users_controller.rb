@@ -29,18 +29,7 @@ class UsersController < ApplicationController
     end
 
     def signup
-        @user = User.create(username: params[:username], password: params[:password], avatar: params[:avatar])
-        # user = User.last
-        render json: @user
-    end
-
-    def create
-        user = User.create(user_params)
-        render json: user
-    end
-
-    def signup
-        @user = User.create(username: params[:username], password: params[:password], avatar: params[:avatar])
+        @user = User.create(username: params[:username], password: params[:password], avatar: params[:avatar], email: params[:email])
         # user = User.last
         render json: @user
     end
