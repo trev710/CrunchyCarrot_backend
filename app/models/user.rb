@@ -10,4 +10,10 @@ class User < ApplicationRecord
 
     has_many :following_users, foreign_key: :followee_id, class_name: 'Friendship'
     has_many :followers, through: :following_users
-  end
+ 
+    # def friendships
+    #self.following_users
+    # end
+
+
+end

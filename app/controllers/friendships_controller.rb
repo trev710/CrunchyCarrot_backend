@@ -10,6 +10,12 @@ class FriendshipsController < ApplicationController
         render json: @new_friendship
       end
 
+      def destroy
+        @friendship = Friendship.find(params[:id]) 
+        @friendship.destroy
+        render json: @friendship
+      end
+
 
       private 
 

@@ -18,6 +18,11 @@ class Review < ApplicationRecord
         self.user
     end
 
+    def movie_object
+        self.movie
+    end
+
+
     def movie_title
         self.movie.title
     end

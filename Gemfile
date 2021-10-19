@@ -57,4 +57,10 @@ gem "jwt", "~> 2.3"
 
 gem 'faker', :git => 'https://github.com/faker-ruby/faker.git', :branch => 'master'
 
+
+
+gem "dotenv-rails"
+gem 'rest-client'
+gem 'json' 
+
 gem "active_model_serializers", "~> 0.10.12"
