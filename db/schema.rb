@@ -26,7 +26,7 @@ ActiveRecord::Schema.define(version: 2021_10_13_174558) do
     t.string "genre"
     t.string "tagline"
     t.integer "release_year"
-    t.string "overview"
+    t.text "overview"
     t.integer "rating"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
@@ -37,6 +37,7 @@ ActiveRecord::Schema.define(version: 2021_10_13_174558) do
     t.integer "movie_id"
     t.text "content"
     t.integer "personal_rating"
+    t.integer "likes"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
@@ -45,6 +46,7 @@ ActiveRecord::Schema.define(version: 2021_10_13_174558) do
     t.string "username"
     t.string "password_digest"
     t.string "avatar"
+    t.string "email"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
