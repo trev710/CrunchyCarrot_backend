@@ -18,12 +18,17 @@ puts "Destroying all instances"
 puts "Seeding data" 
 
 User.create(
-    username: "monke",
+    username: "Guest",
     password: "123",
     avatar: "https://www.kcdma.org/wp-content/uploads/2017/09/appearance-releases.jpeg",
     email: "crunchycarrotstest@gmail.com"
 
 )
+
+# 20.times do 
+#     User.create(username: Faker::Twitter.screen_name, password: "123", avatar: Faker::LoremFlickr.image)
+# end
+
 
 User.create(username: Faker::Twitter.screen_name, password: "abc123", avatar: "https://images.generated.photos/LT1oiQmDQfXybHwj8thgCttXfhwhF_Jgn7eQhf1hE4o/rs:fit:128:128/Z3M6Ly9nZW5lcmF0/ZWQtcGhvdG9zL3Yz/XzA0NTY0NDYuanBn.jpg", email: "crunchycarrotstest@gmail.com")
 User.create(username: Faker::Twitter.screen_name, password: "abc123", avatar: "https://images.generated.photos/NRysxZ5yWs2amxKkcpibCWng-70sPmEaHiECDBnI2Bw/rs:fit:128:128/Z3M6Ly9nZW5lcmF0/ZWQtcGhvdG9zL3Yz/XzA1MzY4MTUuanBn.jpg", email: "crunchycarrotstest@gmail.com")
